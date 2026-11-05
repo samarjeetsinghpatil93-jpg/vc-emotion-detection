@@ -16,14 +16,13 @@ classifiers = [
     
 ]
 dependencies = [
-    "loguru",
-    "mkdocs",
     "pip",
     "pytest",
     "python-dotenv",
-    "ruff",
-    "tqdm",
-    "typer",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "nltk",
 ]
 requires-python = "~=3.15.0"
 
