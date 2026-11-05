@@ -42,8 +42,8 @@ def load_params(params_path: str) -> float:
         raise
 
 # fetch the data from data/processed
-train_data = pd.read_csv('./data/processed/train_processed.csv')
-test_data = pd.read_csv('./data/processed/test_processed.csv')
+train_data = pd.read_csv('./data/interim/train_processed.csv')
+test_data = pd.read_csv('./data/interim/test_processed.csv')
 
 train_data.fillna('',inplace=True)
 test_data.fillna('',inplace=True)
@@ -74,7 +74,7 @@ test_df = pd.DataFrame(X_test_bow.toarray())
 test_df['label'] = y_test
 
 # store the data inside data/features
-data_path = os.path.join("data","features")
+data_path = os.path.join("data","processed")
 
 os.makedirs(data_path)
 
